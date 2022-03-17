@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_65959ed011aa47139c14aa5191be0614 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_65959ed011aa47139c14aa5191be0614" ></div>
+        
+</body>
+<script>    
+    
+            var map_65959ed011aa47139c14aa5191be0614 = L.map(
+                "map_65959ed011aa47139c14aa5191be0614",
+                {
+                    center: [36.884804, 30.704044],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_65959ed011aa47139c14aa5191be0614);
+
+            
+
+        
+    
+            var tile_layer_ac4989d106f04108a083310f8bce4817 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var marker_9da4c7fb41224c209d30663e8f483a6c = L.marker(
+                [37.13333333333333, 30.05],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_5cd1eb44cfa94c9c9e11c00ba6362b4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9da4c7fb41224c209d30663e8f483a6c.setIcon(icon_5cd1eb44cfa94c9c9e11c00ba6362b4a);
+        
+    
+        var popup_aed1f180137448f5baaa24e7826f70d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fea23df46a44d40b75c8b3158d6e9c0 = $(`<div id="html_4fea23df46a44d40b75c8b3158d6e9c0" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A011</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis0.png><div><p>Elevation:1190 meters</p><div></p><div><div><p>Area:130.7 km²</p><div></b> </div>`)[0];
+            popup_aed1f180137448f5baaa24e7826f70d7.setContent(html_4fea23df46a44d40b75c8b3158d6e9c0);
+        
+
+        marker_9da4c7fb41224c209d30663e8f483a6c.bindPopup(popup_aed1f180137448f5baaa24e7826f70d7)
+        ;
+
+        
+    
+    
+            marker_9da4c7fb41224c209d30663e8f483a6c.bindTooltip(
+                `<div>
+                     D09A011
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc051bd5b3ad41b98dadc839ea1cbdb3 = L.marker(
+                [36.93472222222222, 30.57361111111111],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_308b0cc36d1d4c49ada36df0b9040edb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fc051bd5b3ad41b98dadc839ea1cbdb3.setIcon(icon_308b0cc36d1d4c49ada36df0b9040edb);
+        
+    
+        var popup_3b1b69cb907949ce984df988a74a62cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab9bd367c5844043b70f7650dfe81e0a = $(`<div id="html_ab9bd367c5844043b70f7650dfe81e0a" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A031</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis1.png><div><p>Elevation:52 meters</p><div></p><div><div><p>Area:404.6 km²</p><div></b> </div>`)[0];
+            popup_3b1b69cb907949ce984df988a74a62cf.setContent(html_ab9bd367c5844043b70f7650dfe81e0a);
+        
+
+        marker_fc051bd5b3ad41b98dadc839ea1cbdb3.bindPopup(popup_3b1b69cb907949ce984df988a74a62cf)
+        ;
+
+        
+    
+    
+            marker_fc051bd5b3ad41b98dadc839ea1cbdb3.bindTooltip(
+                `<div>
+                     D09A031
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93154fd3cb9542ec99e2566f164452ca = L.marker(
+                [37.13166666666667, 30.94222222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_80c85654a42e465ca624bafb780912ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_93154fd3cb9542ec99e2566f164452ca.setIcon(icon_80c85654a42e465ca624bafb780912ef);
+        
+    
+        var popup_24784a4c364342a1af5971649253304a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_837fc43d6ce94202812fffab3df9597a = $(`<div id="html_837fc43d6ce94202812fffab3df9597a" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A034</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis2.png><div><p>Elevation:62 meters</p><div></p><div><div><p>Area:238.6 km²</p><div></b> </div>`)[0];
+            popup_24784a4c364342a1af5971649253304a.setContent(html_837fc43d6ce94202812fffab3df9597a);
+        
+
+        marker_93154fd3cb9542ec99e2566f164452ca.bindPopup(popup_24784a4c364342a1af5971649253304a)
+        ;
+
+        
+    
+    
+            marker_93154fd3cb9542ec99e2566f164452ca.bindTooltip(
+                `<div>
+                     D09A034
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1cb12c665294cf98b4077537c520ea0 = L.marker(
+                [38.29944444444444, 30.95472222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_53f0e0c28e664847b8909ad3dcf4ac0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c1cb12c665294cf98b4077537c520ea0.setIcon(icon_53f0e0c28e664847b8909ad3dcf4ac0f);
+        
+    
+        var popup_645b4e6c7b494213aa4e2804e20a863f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db44fb44fdfb4fb3bd45ab621cb99d67 = $(`<div id="html_db44fb44fdfb4fb3bd45ab621cb99d67" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A057</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis3.png><div><p>Elevation:950 meters</p><div></p><div><div><p>Area:185.0 km²</p><div></b> </div>`)[0];
+            popup_645b4e6c7b494213aa4e2804e20a863f.setContent(html_db44fb44fdfb4fb3bd45ab621cb99d67);
+        
+
+        marker_c1cb12c665294cf98b4077537c520ea0.bindPopup(popup_645b4e6c7b494213aa4e2804e20a863f)
+        ;
+
+        
+    
+    
+            marker_c1cb12c665294cf98b4077537c520ea0.bindTooltip(
+                `<div>
+                     D09A057
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96a9e8d85bdf4684a79d75aec156b651 = L.marker(
+                [38.39416666666666, 31.12694444444444],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_994a83d91327438b9f386586cdac3290 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_96a9e8d85bdf4684a79d75aec156b651.setIcon(icon_994a83d91327438b9f386586cdac3290);
+        
+    
+        var popup_4c049bb5c56d4a28b1f343fb28d49029 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bfd49a6a6c0488fb42170cad101c75b = $(`<div id="html_1bfd49a6a6c0488fb42170cad101c75b" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A065</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis4.png><div><p>Elevation:1198 meters</p><div></p><div><div><p>Area:103.48 km²</p><div></b> </div>`)[0];
+            popup_4c049bb5c56d4a28b1f343fb28d49029.setContent(html_1bfd49a6a6c0488fb42170cad101c75b);
+        
+
+        marker_96a9e8d85bdf4684a79d75aec156b651.bindPopup(popup_4c049bb5c56d4a28b1f343fb28d49029)
+        ;
+
+        
+    
+    
+            marker_96a9e8d85bdf4684a79d75aec156b651.bindTooltip(
+                `<div>
+                     D09A065
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1c56660a35d4070a8b42e787fd34ddb = L.marker(
+                [36.74388888888889, 31.62277777777778],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_9fc3920cd3a74144b4c3a6e1aee911b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d1c56660a35d4070a8b42e787fd34ddb.setIcon(icon_9fc3920cd3a74144b4c3a6e1aee911b7);
+        
+    
+        var popup_4b072cfd8dd9468cb9e297437e8a92bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3811353df7624612ba5df385a14a98d2 = $(`<div id="html_3811353df7624612ba5df385a14a98d2" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A067</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis5.png><div><p>Elevation:100 meters</p><div></p><div><div><p>Area:303.2 km²</p><div></b> </div>`)[0];
+            popup_4b072cfd8dd9468cb9e297437e8a92bb.setContent(html_3811353df7624612ba5df385a14a98d2);
+        
+
+        marker_d1c56660a35d4070a8b42e787fd34ddb.bindPopup(popup_4b072cfd8dd9468cb9e297437e8a92bb)
+        ;
+
+        
+    
+    
+            marker_d1c56660a35d4070a8b42e787fd34ddb.bindTooltip(
+                `<div>
+                     D09A067
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b251876a71614ec4a12ab07e579ba38c = L.marker(
+                [36.61388888888889, 31.8],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_9294cc54ce544d38995fe976cd9d1cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b251876a71614ec4a12ab07e579ba38c.setIcon(icon_9294cc54ce544d38995fe976cd9d1cdc);
+        
+    
+        var popup_a20dadbb1fa440de99131db4ab298cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_224c33766f9d4f5ea3040636d7043d57 = $(`<div id="html_224c33766f9d4f5ea3040636d7043d57" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A068</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis6.png><div><p>Elevation:16 meters</p><div></p><div><div><p>Area:336.32 km²</p><div></b> </div>`)[0];
+            popup_a20dadbb1fa440de99131db4ab298cd9.setContent(html_224c33766f9d4f5ea3040636d7043d57);
+        
+
+        marker_b251876a71614ec4a12ab07e579ba38c.bindPopup(popup_a20dadbb1fa440de99131db4ab298cd9)
+        ;
+
+        
+    
+    
+            marker_b251876a71614ec4a12ab07e579ba38c.bindTooltip(
+                `<div>
+                     D09A068
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f96f91342ea04790a8164fa38edc75bd = L.marker(
+                [37.62305555555555, 31.12361111111111],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_d312f57f75e9442ebee19974c31b2f62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f96f91342ea04790a8164fa38edc75bd.setIcon(icon_d312f57f75e9442ebee19974c31b2f62);
+        
+    
+        var popup_de7282b6a1f84a27b3eeee8334dec74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f5362df309646df91f5021fd347ff16 = $(`<div id="html_9f5362df309646df91f5021fd347ff16" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A086</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis7.png><div><p>Elevation:1000 meters</p><div></p><div><div><p>Area:349.0 km²</p><div></b> </div>`)[0];
+            popup_de7282b6a1f84a27b3eeee8334dec74f.setContent(html_9f5362df309646df91f5021fd347ff16);
+        
+
+        marker_f96f91342ea04790a8164fa38edc75bd.bindPopup(popup_de7282b6a1f84a27b3eeee8334dec74f)
+        ;
+
+        
+    
+    
+            marker_f96f91342ea04790a8164fa38edc75bd.bindTooltip(
+                `<div>
+                     D09A086
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9bdc750883949e686d2800f680191ab = L.marker(
+                [37.46277777777778, 30.91222222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_6a30827387394dd5a2ab274192957513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a9bdc750883949e686d2800f680191ab.setIcon(icon_6a30827387394dd5a2ab274192957513);
+        
+    
+        var popup_27d1ff682c994723960b9fd426906dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66712a803db540bd89c89c82d59de756 = $(`<div id="html_66712a803db540bd89c89c82d59de756" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A089</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis8.png><div><p>Elevation:320 meters</p><div></p><div><div><p>Area:313.9 km²</p><div></b> </div>`)[0];
+            popup_27d1ff682c994723960b9fd426906dd0.setContent(html_66712a803db540bd89c89c82d59de756);
+        
+
+        marker_a9bdc750883949e686d2800f680191ab.bindPopup(popup_27d1ff682c994723960b9fd426906dd0)
+        ;
+
+        
+    
+    
+            marker_a9bdc750883949e686d2800f680191ab.bindTooltip(
+                `<div>
+                     D09A089
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7cb2d31798a47c5b2260463c5b445ea = L.marker(
+                [37.07194444444445, 30.58055555555556],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_b6cc6ab3a5614fc29832a897345e3cdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f7cb2d31798a47c5b2260463c5b445ea.setIcon(icon_b6cc6ab3a5614fc29832a897345e3cdb);
+        
+    
+        var popup_a3f5a3b6222a4312838307fec1030a3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd224a4556c54417bc78e6290c9373ff = $(`<div id="html_dd224a4556c54417bc78e6290c9373ff" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A091</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis9.png><div><p>Elevation:300 meters</p><div></p><div><div><p>Area:2000.0 km²</p><div></b> </div>`)[0];
+            popup_a3f5a3b6222a4312838307fec1030a3e.setContent(html_dd224a4556c54417bc78e6290c9373ff);
+        
+
+        marker_f7cb2d31798a47c5b2260463c5b445ea.bindPopup(popup_a3f5a3b6222a4312838307fec1030a3e)
+        ;
+
+        
+    
+    
+            marker_f7cb2d31798a47c5b2260463c5b445ea.bindTooltip(
+                `<div>
+                     D09A091
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0acce6627f3946f4893991279d327013 = L.marker(
+                [36.825, 30.46722222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_0cae4f25a4394a84944bfea91d073080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0acce6627f3946f4893991279d327013.setIcon(icon_0cae4f25a4394a84944bfea91d073080);
+        
+    
+        var popup_811ea2548af9467787e314e1a7d14e1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6ea7253c565460c8136c91604adbe3d = $(`<div id="html_d6ea7253c565460c8136c91604adbe3d" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A095</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis10.png><div><p>Elevation:160 meters</p><div></p><div><div><p>Area:164.0 km²</p><div></b> </div>`)[0];
+            popup_811ea2548af9467787e314e1a7d14e1e.setContent(html_d6ea7253c565460c8136c91604adbe3d);
+        
+
+        marker_0acce6627f3946f4893991279d327013.bindPopup(popup_811ea2548af9467787e314e1a7d14e1e)
+        ;
+
+        
+    
+    
+            marker_0acce6627f3946f4893991279d327013.bindTooltip(
+                `<div>
+                     D09A095
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db5fe86e1f0942909ca3fed32ccbe68b = L.marker(
+                [37.65916666666666, 31.15555555555556],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_4a412d92d00d4e81adf37692a80e0eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_db5fe86e1f0942909ca3fed32ccbe68b.setIcon(icon_4a412d92d00d4e81adf37692a80e0eea);
+        
+    
+        var popup_93d629093dbe457a9fa043573a354646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_352ccbd62d2246779d096cf655b6d215 = $(`<div id="html_352ccbd62d2246779d096cf655b6d215" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A100</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis11.png><div><p>Elevation:1085 meters</p><div></p><div><div><p>Area:223.0 km²</p><div></b> </div>`)[0];
+            popup_93d629093dbe457a9fa043573a354646.setContent(html_352ccbd62d2246779d096cf655b6d215);
+        
+
+        marker_db5fe86e1f0942909ca3fed32ccbe68b.bindPopup(popup_93d629093dbe457a9fa043573a354646)
+        ;
+
+        
+    
+    
+            marker_db5fe86e1f0942909ca3fed32ccbe68b.bindTooltip(
+                `<div>
+                     D09A100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72f8ce64edc442488c5811b92ff8eb86 = L.marker(
+                [36.98, 31.19972222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_b9ac985a49314af1b19fdab26dec510d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_72f8ce64edc442488c5811b92ff8eb86.setIcon(icon_b9ac985a49314af1b19fdab26dec510d);
+        
+    
+        var popup_ae43ea6a12fa43468cfb4fa88ec023e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4566cba441ba4f77876c65053d9d40ff = $(`<div id="html_4566cba441ba4f77876c65053d9d40ff" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A101</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis12.png><div><p>Elevation:20 meters</p><div></p><div><div><p>Area:2330.0 km²</p><div></b> </div>`)[0];
+            popup_ae43ea6a12fa43468cfb4fa88ec023e9.setContent(html_4566cba441ba4f77876c65053d9d40ff);
+        
+
+        marker_72f8ce64edc442488c5811b92ff8eb86.bindPopup(popup_ae43ea6a12fa43468cfb4fa88ec023e9)
+        ;
+
+        
+    
+    
+            marker_72f8ce64edc442488c5811b92ff8eb86.bindTooltip(
+                `<div>
+                     D09A101
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da88b507f2ac47f3aeea021c6dafacc6 = L.marker(
+                [36.99166666666667, 31.28472222222222],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_8107dab881a64ba390e7f7bef7ea3deb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_da88b507f2ac47f3aeea021c6dafacc6.setIcon(icon_8107dab881a64ba390e7f7bef7ea3deb);
+        
+    
+        var popup_00680096387940b890b0c48e10e2cabf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6486b40da33e4bbcac1bd20af3b84140 = $(`<div id="html_6486b40da33e4bbcac1bd20af3b84140" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:D09A122</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis13.png><div><p>Elevation:80 meters</p><div></p><div><div><p>Area:144.84 km²</p><div></b> </div>`)[0];
+            popup_00680096387940b890b0c48e10e2cabf.setContent(html_6486b40da33e4bbcac1bd20af3b84140);
+        
+
+        marker_da88b507f2ac47f3aeea021c6dafacc6.bindPopup(popup_00680096387940b890b0c48e10e2cabf)
+        ;
+
+        
+    
+    
+            marker_da88b507f2ac47f3aeea021c6dafacc6.bindTooltip(
+                `<div>
+                     D09A122
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00caefc297294b2f9ab5a98fc15b179c = L.marker(
+                [37.14166666666667, 31.18861111111111],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_c7f4826a9d934794a5185721c420f03d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_00caefc297294b2f9ab5a98fc15b179c.setIcon(icon_c7f4826a9d934794a5185721c420f03d);
+        
+    
+        var popup_0de841814e1d4ba8ad7c119ac190e57a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30d1f149aef340cdaa4495b756c330cc = $(`<div id="html_30d1f149aef340cdaa4495b756c330cc" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A002</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis14.png><div><p>Elevation:116 meters</p><div></p><div><div><p>Area:1942.4 km²</p><div></b> </div>`)[0];
+            popup_0de841814e1d4ba8ad7c119ac190e57a.setContent(html_30d1f149aef340cdaa4495b756c330cc);
+        
+
+        marker_00caefc297294b2f9ab5a98fc15b179c.bindPopup(popup_0de841814e1d4ba8ad7c119ac190e57a)
+        ;
+
+        
+    
+    
+            marker_00caefc297294b2f9ab5a98fc15b179c.bindTooltip(
+                `<div>
+                     E09A002
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64107b869a0944c5ae32acdc061b12dc = L.marker(
+                [36.97944444444445, 31.60861111111111],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_3ce98b503ce846ed9a26cb40253e26bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_64107b869a0944c5ae32acdc061b12dc.setIcon(icon_3ce98b503ce846ed9a26cb40253e26bf);
+        
+    
+        var popup_9006475709ad47a3804e396eb1dff49d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_484dda41abe4481a9c29f40e529ba75f = $(`<div id="html_484dda41abe4481a9c29f40e529ba75f" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A012</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis15.png><div><p>Elevation:245 meters</p><div></p><div><div><p>Area:625.6 km²</p><div></b> </div>`)[0];
+            popup_9006475709ad47a3804e396eb1dff49d.setContent(html_484dda41abe4481a9c29f40e529ba75f);
+        
+
+        marker_64107b869a0944c5ae32acdc061b12dc.bindPopup(popup_9006475709ad47a3804e396eb1dff49d)
+        ;
+
+        
+    
+    
+            marker_64107b869a0944c5ae32acdc061b12dc.bindTooltip(
+                `<div>
+                     E09A012
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c2bef1faca4ed3a13bfbae30801f7a = L.marker(
+                [36.69694444444444, 31.72666666666667],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_be29e81ae5ed4992a4deaa074c5ff020 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_15c2bef1faca4ed3a13bfbae30801f7a.setIcon(icon_be29e81ae5ed4992a4deaa074c5ff020);
+        
+    
+        var popup_7654a8fb97b142c18d97e32792ef7fbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2245e8cc07d94b9a894eb7978f1a3061 = $(`<div id="html_2245e8cc07d94b9a894eb7978f1a3061" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A017</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis16.png><div><p>Elevation:28 meters</p><div></p><div><div><p>Area:875.5 km²</p><div></b> </div>`)[0];
+            popup_7654a8fb97b142c18d97e32792ef7fbc.setContent(html_2245e8cc07d94b9a894eb7978f1a3061);
+        
+
+        marker_15c2bef1faca4ed3a13bfbae30801f7a.bindPopup(popup_7654a8fb97b142c18d97e32792ef7fbc)
+        ;
+
+        
+    
+    
+            marker_15c2bef1faca4ed3a13bfbae30801f7a.bindTooltip(
+                `<div>
+                     E09A017
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aacc43523fc46ef88c36bd0ba81044e = L.marker(
+                [37.52166666666667, 31.2025],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_d0dab32ad2b34c41a9258371529523af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2aacc43523fc46ef88c36bd0ba81044e.setIcon(icon_d0dab32ad2b34c41a9258371529523af);
+        
+    
+        var popup_47f5037f270542d6a3182be7c3813a89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f63cb5854c30401ca56bd321f6e913ce = $(`<div id="html_f63cb5854c30401ca56bd321f6e913ce" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A021</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis17.png><div><p>Elevation:738 meters</p><div></p><div><div><p>Area:1005.5 km²</p><div></b> </div>`)[0];
+            popup_47f5037f270542d6a3182be7c3813a89.setContent(html_f63cb5854c30401ca56bd321f6e913ce);
+        
+
+        marker_2aacc43523fc46ef88c36bd0ba81044e.bindPopup(popup_47f5037f270542d6a3182be7c3813a89)
+        ;
+
+        
+    
+    
+            marker_2aacc43523fc46ef88c36bd0ba81044e.bindTooltip(
+                `<div>
+                     E09A021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbc68428111c4e2cb9394b629b401990 = L.marker(
+                [36.78138888888889, 32.10722222222223],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_56a9f40d5c614adf897d9127f487edec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cbc68428111c4e2cb9394b629b401990.setIcon(icon_56a9f40d5c614adf897d9127f487edec);
+        
+    
+        var popup_fd3be1f47932453e98b1df28beef4a8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b3cd76a6d12494584a7736a70b4529e = $(`<div id="html_0b3cd76a6d12494584a7736a70b4529e" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A022</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis18.png><div><p>Elevation:382 meters</p><div></p><div><div><p>Area:396.3 km²</p><div></b> </div>`)[0];
+            popup_fd3be1f47932453e98b1df28beef4a8f.setContent(html_0b3cd76a6d12494584a7736a70b4529e);
+        
+
+        marker_cbc68428111c4e2cb9394b629b401990.bindPopup(popup_fd3be1f47932453e98b1df28beef4a8f)
+        ;
+
+        
+    
+    
+            marker_cbc68428111c4e2cb9394b629b401990.bindTooltip(
+                `<div>
+                     E09A022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76a390515b6c4364b7d609576a7c6055 = L.marker(
+                [36.75916666666667, 32.01666666666667],
+                {}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var icon_082cfc05d4264077ac320228dc864f1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_76a390515b6c4364b7d609576a7c6055.setIcon(icon_082cfc05d4264077ac320228dc864f1d);
+        
+    
+        var popup_1a8b92fc708443449b3797e4be0793ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d7d38caffb3477391f49acaef70192d = $(`<div id="html_7d7d38caffb3477391f49acaef70192d" style="width: 100.0%; height: 100.0%;"><div><p>Staion Name:E09A024</p><div><b><img src=https://raw.githubusercontent.com/Talenda/Antalya_Map/main/Antalya_HTML/vis/vis19.png><div><p>Elevation:250 meters</p><div></p><div><div><p>Area:611.0 km²</p><div></b> </div>`)[0];
+            popup_1a8b92fc708443449b3797e4be0793ba.setContent(html_7d7d38caffb3477391f49acaef70192d);
+        
+
+        marker_76a390515b6c4364b7d609576a7c6055.bindPopup(popup_1a8b92fc708443449b3797e4be0793ba)
+        ;
+
+        
+    
+    
+            marker_76a390515b6c4364b7d609576a7c6055.bindTooltip(
+                `<div>
+                     E09A024
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_a31d7df856144dc8b7fd9b4e06a93589 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var tile_layer_099cd04b02bb4d6b9898cf0d1047ab6a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var tile_layer_f4d79b92f5e34d76b5b0eeedece80a69 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var tile_layer_ad83d51b33d14afa915ef97c62015c38 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var tile_layer_05808ed024c44aa59c11499fb64ea7b4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var tile_layer_e4817e7bdca042fcae7ab0580151546a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+    
+            var layer_control_2e5bddd5ccd34f0eb3c9242c6ca32755 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a31d7df856144dc8b7fd9b4e06a93589,
+                    "stamenterrain" : tile_layer_099cd04b02bb4d6b9898cf0d1047ab6a,
+                    "stamentoner" : tile_layer_f4d79b92f5e34d76b5b0eeedece80a69,
+                    "stamenwatercolor" : tile_layer_ad83d51b33d14afa915ef97c62015c38,
+                    "cartodbpositron" : tile_layer_05808ed024c44aa59c11499fb64ea7b4,
+                    "cartodbdark_matter" : tile_layer_e4817e7bdca042fcae7ab0580151546a,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2e5bddd5ccd34f0eb3c9242c6ca32755.base_layers,
+                layer_control_2e5bddd5ccd34f0eb3c9242c6ca32755.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+            tile_layer_099cd04b02bb4d6b9898cf0d1047ab6a.remove();
+            tile_layer_f4d79b92f5e34d76b5b0eeedece80a69.remove();
+            tile_layer_ad83d51b33d14afa915ef97c62015c38.remove();
+            tile_layer_05808ed024c44aa59c11499fb64ea7b4.remove();
+            tile_layer_e4817e7bdca042fcae7ab0580151546a.remove();
+            tile_layer_a31d7df856144dc8b7fd9b4e06a93589.remove();
+        
+    
+                var lat_lng_popup_a8df22d5385d4691bcac3d3edd76bedd = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_a8df22d5385d4691bcac3d3edd76bedd
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_65959ed011aa47139c14aa5191be0614);
+                    }
+                map_65959ed011aa47139c14aa5191be0614.on('click', latLngPop);
+            
+    
+            var tile_layer_46bdfbb4c3d3475490e32c7dc374a90a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_3d220bfdd15e4308b8e957b8eeb99513 = new L.Control.MiniMap(
+                tile_layer_46bdfbb4c3d3475490e32c7dc374a90a,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_65959ed011aa47139c14aa5191be0614.addControl(mini_map_3d220bfdd15e4308b8e957b8eeb99513);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topright", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_65959ed011aa47139c14aa5191be0614);
+        
+</script>
